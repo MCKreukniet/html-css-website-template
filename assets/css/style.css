@@ -1,0 +1,272 @@
+:root {
+	/* 1sp == 1dp */
+	--sp1: calc(1rem / 13);
+	--sp2: calc(var(--sp1) * 2);
+	--sp3: calc(var(--sp1) * 3);
+	--sp4: calc(var(--sp1) * 4);
+	--sp6: calc(var(--sp1) * 6);
+	
+	--max-width-content: 76rem;
+	
+	/* start */
+	/* https://material.io/ - Using the material design color palette */
+	--primary-color: #3F51B5; /* Indigo 500 */
+	--primary-color-darkened-plus2: #303F9F; /* Indigo 700 */
+	--primary-color-darkened-plus3: #283593; /* Indigo 800 */
+	
+	--secondary-color: #E91E63; /* Pink 500 */
+	
+	--secondary-color-accent: #FF4081; /* Pink A200 */
+	--secondary-color-accent-minus1: #FF80AB; /* Pink A100 */
+	/* end */
+	
+	/* start */
+	/* https://material.io/ - Text and background colors */
+	--dark-primary-text: rgba(0, 0, 0, 0.87);
+	--dark-secondary-text: rgba(0, 0, 0, 0.54);
+	
+	--light-primary-text: rgba(255, 255, 255, 1);
+	--light-secondary-text: rgba(255, 255, 255, 0.7);
+	/* end */
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+
+	color: var(--dark-primary-text);
+
+	font-family: Arial, Helvetica, sans-serif; /* CSS Web Safe Font */
+	font-size: 100%;
+	line-height: 1.618;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: Georgia, serif; /* CSS Web Safe Font */
+	font-weight: bold;
+}
+
+h1 {
+	margin: 0;
+
+	font-size: 2rem;
+	line-height: 2rem;
+	
+	padding-left: 1rem;
+	border-left: solid var(--secondary-color) var(--sp6);
+}
+
+h2 {
+	margin: 1rem 0 0 0;
+
+	font-size: 1.618rem;
+}
+
+p {
+	max-width: 34rem;
+}
+
+#primary-header-wrapper, #main-container, #primary-footer {
+	display: flex;
+
+	width: 100%;
+
+	justify-content: center;
+}
+
+#advertisements {
+	display: none;
+}
+
+@media (min-width: 880px) { /* 55em x 16px = 880px */
+	#primary-header, main {
+		width: 55rem;
+	}
+}
+
+@media (min-width: 1216px) { /* 76em x 16px = 1216px */
+	#primary-header {
+		width: var(--max-width-content);
+	}
+
+	#advertisements {
+		display: flex;
+	}
+}
+
+#primary-header-wrapper {
+	position: relative;
+
+	background-color: var(--primary-color-darkened-plus2);
+	box-shadow: 0 var(--sp2) var(--sp4) 0 rgba(0, 0, 0, 0.4); /* TODO */
+}
+
+#primary-header {
+	display: flex;
+	justify-content: space-between;
+}
+
+.primary-brand {
+	display: flex;
+
+	margin: 1rem 0 1rem 0;
+
+	text-decoration: none;
+
+	align-items: flex-end;
+}
+
+.primary-brand__logo {
+	height: 5rem;
+	margin-right: 1rem;
+}
+
+.primary-brand-titles {
+	display: flex;
+	flex-direction: column;
+}
+
+.primary-brand-titles__title {
+	color: var(--light-primary-text);
+
+	font-size: 2rem;
+	line-height: 2rem;
+}
+
+.primary-brand-titles__subtitle {
+	color: var(--light-primary-text);
+	padding-top: 0.309rem; /* line-heigth (1.618 - 1) / 2 */
+	line-height: 1rem;
+}
+
+.primary-menu {
+	margin-top: 4rem; /* TODO */
+	height: 3rem;
+	align-self: stretch;
+}
+
+.primary-menu__items {
+	display: flex;
+
+	height: 100%;
+	margin: 0;
+	padding: 0;
+
+	letter-spacing: .2rem;
+
+	align-items: stretch;
+}
+
+.primary-menu__items > li {
+	display: inline-flex;
+}
+
+.primary-menu__items > li > a {
+	display: flex;
+
+	padding: 0 1rem 0 1rem;
+
+	align-items: center;
+	
+	text-decoration: none;
+}
+
+.primary-menu__items__item--active {
+	padding-top: var(--sp2);
+	border-bottom: solid var(--secondary-color-accent) var(--sp2);
+}
+
+.primary-menu__items__item--active > a {
+	color: var(--light-primary-text);
+}
+
+.primary-menu__items > li:not(.primary-menu__items__item--active) > a {
+	color: var(--light-secondary-text);
+}
+
+.primary-menu__items > li:not(.primary-menu__items__item--active) > a:hover {
+	padding-top: var(--sp2);
+	border-bottom: solid var(--secondary-color-accent-minus1) var(--sp2);
+}
+
+#main-container {
+	min-height: 34rem;
+
+	background-color: #fff;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+}
+
+.main-header {
+	padding: 5rem 0 1rem 0;
+
+	border-bottom: var(--sp1) solid #999;
+}
+
+.main-header__date {
+	margin: 1rem 0 0 0;
+	line-height: 1rem;
+	color: var(--dark-secondary-text);
+}
+
+p#intro {
+	font-weight: bold;
+}
+
+#advertisements {
+	flex-direction: column;
+	align-items: flex-end;
+	width: 21rem;
+	padding: 1rem 0 1rem 1rem;
+}
+
+#advertisements > div + div {
+	margin-top: 1rem;
+}
+
+#primary-footer {
+	flex-direction: column;
+
+	height: 13rem;
+
+	color: var(--light-primary-text);
+
+	background-color: var(--primary-color-darkened-plus3);
+	box-shadow: 0px 0px var(--sp2) 0px rgba(0,0,0,0.4); /* TODO: inside */
+
+	font-family: Verdana, Geneva, sans-serif; /* CSS Web Safe Font */
+
+	align-items: center;
+}
+
+.social-container {
+	display: flex;
+
+	margin-bottom: 2rem;
+
+	align-items: center;
+}
+
+.social-container__networks {
+	margin: 0 2rem 0 0;
+	padding: 0;
+}
+
+.social-container__networks > li {
+	display: inline;
+}
+
+.social-container__networks > li + li {
+	margin-left: 1rem;
+}
+
+/* About */
+#sound-cloud-playlist  > div {
+	width: 300px;
+}
