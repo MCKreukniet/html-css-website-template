@@ -210,6 +210,13 @@ p {
 	color: var(--dark-secondary-text);
 }
 
+.post-visual {
+	height: 21rem;
+	width: 21rem;
+	margin: 2rem 0 2rem 2rem;
+	float: right;
+}
+
 p#intro {
 	font-weight: bold;
 }
