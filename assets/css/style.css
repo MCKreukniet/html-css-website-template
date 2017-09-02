@@ -211,10 +211,27 @@ p {
 }
 
 .post-visual {
-  height: 21rem;
-  width: 21rem;
   margin: 2rem 0 2rem 2rem;
   float: right;
+  overflow: hidden;
+}
+
+.post-visual--fixed-size {
+  height: 21rem;
+  width: 21rem;
+}
+
+.post-visual--fixed-height {
+  height: 21rem;
+}
+
+.post-visual--fixed-width {
+  width: 21rem;
+}
+
+.post-visual__default-ratio {
+  max-height: 21rem;
+  max-width: 21rem;
 }
 
 p#intro {
