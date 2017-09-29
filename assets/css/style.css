@@ -81,22 +81,6 @@ p {
   display: none;
 }
 
-@media (min-width: 880px) { /* 55em x 16px = 880px */
-  #primary-header, main {
-    width: 55rem;
-  }
-}
-
-@media (min-width: 1216px) { /* 76em x 16px = 1216px */
-  #primary-header {
-    width: var(--max-width-content);
-  }
-
-  #advertisements {
-    display: flex;
-  }
-}
-
 #primary-header-wrapper {
   position: relative;
 
@@ -146,6 +130,8 @@ p {
   margin-top: 4rem; /* TODO */
   height: 3rem;
   align-self: stretch;
+
+  display: none;
 }
 
 .primary-menu__items {
@@ -288,4 +274,24 @@ p#intro {
 /* About */
 #sound-cloud-playlist  > div {
   width: 300px;
+}
+
+@media (min-width: 768px) {
+  #primary-header, main {
+    width: 55rem;
+  }
+
+  .primary-menu {
+    display: block;
+  }
+}
+
+@media (min-width: 1024px) {
+  #primary-header {
+    width: var(--max-width-content);
+  }
+
+  #advertisements {
+    display: flex;
+  }
 }
