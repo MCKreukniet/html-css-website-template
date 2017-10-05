@@ -184,6 +184,11 @@ p {
   background-color: #fff;
 }
 
+/* padding on all screen sizes */
+#primary-header-wrapper, #main-container {
+  padding: 0 1rem 0 1rem;
+}
+
 .main-header {
   padding: 5rem 0 1rem 0;
 
