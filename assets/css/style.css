@@ -104,7 +104,7 @@ p {
 }
 
 .primary-brand__logo {
-  height: 5rem;
+  height: 1.618rem;
   margin-right: 1rem;
 }
 
@@ -116,11 +116,13 @@ p {
 .primary-brand-titles__title {
   color: var(--light-primary-text);
 
-  font-size: 2rem;
-  line-height: 2rem;
+  font-size: 1.618rem;
+  line-height: 1.618rem;
 }
 
 .primary-brand-titles__subtitle {
+  display: none;
+
   color: var(--light-primary-text);
   padding-top: 0.309rem; /* line-heigth (1.618 - 1) / 2 */
   line-height: 1rem;
@@ -190,9 +192,7 @@ p {
 }
 
 .main-header {
-  padding: 5rem 0 1rem 0;
-
-  border-bottom: var(--sp1) solid #999;
+  padding-top: 5rem;
 }
 
 .main-header__date {
@@ -202,14 +202,13 @@ p {
 }
 
 .post-visual {
-  margin: 2rem 0 2rem 2rem;
-  float: right;
+  margin: 2rem 0 2rem 0;
   overflow: hidden;
 }
 
 .post-visual--fixed-size {
   height: 21rem;
-  width: 21rem;
+  width: 55rem;
 }
 
 .post-visual--fixed-height {
@@ -277,13 +276,26 @@ p#intro {
 }
 
 /* About */
-#sound-cloud-playlist  > div {
+#sound-cloud-playlist > div {
   width: 300px;
 }
 
 @media (min-width: 768px) {
   #primary-header, main {
     width: 55rem;
+  }
+
+  .primary-brand__logo {
+    height: 5rem;
+  }
+
+  .primary-brand-titles__title {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+
+  .primary-brand-titles__subtitle {
+    display: block;
   }
 
   .primary-menu {
