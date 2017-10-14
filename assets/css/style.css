@@ -69,6 +69,10 @@ p {
   max-width: 34rem;
 }
 
+main {
+  padding-bottom: 1rem;
+}
+
 #primary-header-wrapper, #main-container, #primary-footer {
   display: flex;
 
