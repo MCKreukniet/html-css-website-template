@@ -69,7 +69,7 @@ h2 {
 }
 
 p {
-  max-width: 34rem;
+  max-width: 13rem;
 }
 
 .screen-x-padding {
@@ -107,7 +107,7 @@ p {
 }
 
 .primary-brand__logo {
-  height: 1rem;
+  height: 1.618rem;
   margin-right: 1rem;
 }
 
@@ -119,8 +119,8 @@ p {
 .primary-brand-titles__title {
   color: var(--light-primary-text);
 
-  font-size: 1rem;
-  line-height: 1rem;
+  font-size: 1.618rem;
+  line-height: 1.618rem;
 }
 
 .primary-brand-titles__subtitle {
@@ -271,6 +271,10 @@ p {
 }
 
 @media (min-width: 768px) {
+  p {
+    max-width: 34rem;
+  }
+
   .primary-header, .primary-content {
     width: 39rem; /* 34 + 5 */
   }
