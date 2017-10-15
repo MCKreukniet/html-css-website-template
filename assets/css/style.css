@@ -76,16 +76,16 @@ main {
   padding-bottom: 1rem;
 }
 
+.screen-x-padding {
+  padding: 0 1rem 0 1rem;
+}
+
 #primary-header-wrapper, #main-container, #primary-footer {
   display: flex;
 
   width: 100%;
 
   justify-content: center;
-}
-
-#advertisements {
-  display: none;
 }
 
 #primary-header-wrapper {
@@ -193,11 +193,6 @@ main {
   background-color: #fff;
 }
 
-/* padding on all screen sizes */
-#primary-header-wrapper, #main-container {
-  padding: 0 1rem 0 1rem;
-}
-
 .main-header {
   padding-top: 5rem;
 }
@@ -215,7 +210,7 @@ main {
 
 .post-visual--fixed-size {
   height: 21rem;
-  width: 55rem;
+  width: 34rem;
 }
 
 .post-visual--fixed-height {
@@ -236,6 +231,7 @@ p#intro {
 }
 
 #advertisements {
+  display: none;
   flex-direction: column;
   align-items: flex-end;
   width: 21rem;
@@ -289,7 +285,7 @@ p#intro {
 
 @media (min-width: 768px) {
   #primary-header, main {
-    width: 55rem;
+    width: 39rem; /* 34 + 5 */
   }
 
   .primary-brand__logo {
@@ -312,7 +308,7 @@ p#intro {
 
 @media (min-width: 1024px) {
   #primary-header {
-    width: var(--max-width-content);
+    width: 60rem; /* 34 + 5 + 21*/
   }
 
   #advertisements {
