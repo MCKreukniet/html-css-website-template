@@ -107,7 +107,7 @@ p {
 }
 
 .primary-brand__logo {
-  height: 1.618rem;
+  height: 1rem;
   margin-right: 1rem;
 }
 
@@ -119,8 +119,8 @@ p {
 .primary-brand-titles__title {
   color: var(--light-primary-text);
 
-  font-size: 1.618rem;
-  line-height: 1.618rem;
+  font-size: 1rem;
+  line-height: 1rem;
 }
 
 .primary-brand-titles__subtitle {
