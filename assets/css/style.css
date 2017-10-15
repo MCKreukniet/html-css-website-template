@@ -6,7 +6,8 @@
   --sp4: calc(var(--sp1) * 4);
   --sp6: calc(var(--sp1) * 6);
 
-  --max-width-content: 76rem;
+  --smallest-content-width: 13rem;
+  --default-content-width: 34rem;
 
   /* start */
   /* https://material.io/ - Using the material design color palette */
@@ -69,7 +70,7 @@ h2 {
 }
 
 p {
-  max-width: 13rem;
+  max-width: var(--smallest-content-width);
 }
 
 .screen-x-padding {
@@ -209,7 +210,7 @@ p {
 
 .post-visual {
   margin: 2rem 0 2rem 0;
-  width: 34rem;
+  width: var(--smallest-content-width);
   overflow: hidden;
 }
 
@@ -272,7 +273,7 @@ p {
 
 @media (min-width: 768px) {
   p {
-    max-width: 34rem;
+    max-width: var(--default-content-width);
   }
 
   .primary-header, .primary-content {
@@ -294,6 +295,10 @@ p {
 
   .primary-menu {
     display: block;
+  }
+
+  .post-visual {
+    width: var(--default-content-width);
   }
 }
 
