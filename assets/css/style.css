@@ -72,15 +72,11 @@ p {
   max-width: 34rem;
 }
 
-main {
-  padding-bottom: 1rem;
-}
-
 .screen-x-padding {
   padding: 0 1rem 0 1rem;
 }
 
-#primary-header-wrapper, #main-container, #primary-footer {
+.primary-header-wrapper, .primary-content-container, .primary-footer {
   display: flex;
 
   width: 100%;
@@ -88,14 +84,14 @@ main {
   justify-content: center;
 }
 
-#primary-header-wrapper {
+.primary-header-wrapper {
   position: relative;
 
   background-color: var(--primary-color-darkened-plus2);
   box-shadow: 0 var(--sp2) var(--sp4) 0 rgba(0, 0, 0, 0.4); /* TODO */
 }
 
-#primary-header {
+.primary-header {
   display: flex;
   justify-content: space-between;
 }
@@ -187,17 +183,25 @@ main {
   border-bottom: solid var(--secondary-color-accent-minus1) var(--sp2);
 }
 
-#main-container {
+.primary-content-container {
   min-height: 34rem;
 
   background-color: #fff;
 }
 
-.main-header {
+.primary-content {
+  padding-bottom: 1rem;
+}
+
+.primary-content__intro {
+  font-weight: bold;
+}
+
+.content-header {
   padding-top: 5rem;
 }
 
-.main-header__date {
+.content-header__date {
   margin: 1rem 0 0 0;
   line-height: 1rem;
   color: var(--dark-secondary-text);
@@ -205,32 +209,15 @@ main {
 
 .post-visual {
   margin: 2rem 0 2rem 0;
-  overflow: hidden;
-}
-
-.post-visual--fixed-size {
-  height: 21rem;
   width: 34rem;
+  overflow: hidden;
 }
 
 .post-visual--fixed-height {
   height: 21rem;
 }
 
-.post-visual--fixed-width {
-  width: 21rem;
-}
-
-.post-visual__default-ratio {
-  max-height: 21rem;
-  max-width: 21rem;
-}
-
-p#intro {
-  font-weight: bold;
-}
-
-#advertisements {
+.primary-content-side-bar {
   display: none;
   flex-direction: column;
   align-items: flex-end;
@@ -238,11 +225,11 @@ p#intro {
   padding: 1rem 0 1rem 1rem;
 }
 
-#advertisements > div + div {
+.primary-content-side-bar > div + div {
   margin-top: 1rem;
 }
 
-#primary-footer {
+.primary-footer {
   flex-direction: column;
 
   height: 13rem;
@@ -284,7 +271,7 @@ p#intro {
 }
 
 @media (min-width: 768px) {
-  #primary-header, main {
+  .primary-header, .primary-content {
     width: 39rem; /* 34 + 5 */
   }
 
@@ -307,11 +294,11 @@ p#intro {
 }
 
 @media (min-width: 1024px) {
-  #primary-header {
+  .primary-header {
     width: 60rem; /* 34 + 5 + 21*/
   }
 
-  #advertisements {
+  .primary-content-side-bar {
     display: flex;
   }
 }
