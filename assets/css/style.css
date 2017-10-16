@@ -149,8 +149,6 @@ p {
   margin: 4rem 0 0 0; /* TODO */ /* only margin-top is not enough */
   padding: 0;
 
-  letter-spacing: .2rem;
-
   align-items: stretch;
 }
 
