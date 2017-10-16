@@ -146,7 +146,7 @@ p {
   display: none;
 
   height: 100%;
-  margin: 4rem 0 0 0; /* TODO */ /* only margin-top is not enough */
+  margin: 0;
   padding: 0;
 
   align-items: stretch;
@@ -278,20 +278,7 @@ p {
   }
 
   .primary-header, .primary-content {
-    width: 39rem; /* 34 + 5 */
-  }
-
-  .primary-brand__logo {
-    height: 5rem;
-  }
-
-  .primary-brand-titles__title {
-    font-size: 2rem;
-    line-height: 2rem;
-  }
-
-  .primary-brand-titles__subtitle {
-    display: block;
+    width: 34rem;
   }
 
   .primary-menu__hamburger {
@@ -322,6 +309,23 @@ p {
 @media (min-width: 1062px) { /* ((34 + 2) + 21 + 1) x 18 = 1044 */
   .primary-header {
     width: 60rem; /* 34 + 5 + 21 */
+  }
+
+  .primary-brand__logo {
+    height: 5rem;
+  }
+
+  .primary-brand-titles__title {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+
+  .primary-brand-titles__subtitle {
+    display: block;
+  }
+
+  .primary-menu__items {
+    margin: 4rem 0 0 0; /* TODO */ /* only margin-top is not enough */
   }
 
   .primary-content-side-bar {
