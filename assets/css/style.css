@@ -306,9 +306,9 @@ p {
   }
 }
 
-@media (min-width: 1062px) { /* ((34 + 2) + 21 + 1) x 18 = 1044 */
+@media (min-width: 1044px) { /* ((34 + 2) + (21 + 1)) x 18 = 1044; with screen padding */
   .primary-header {
-    width: 60rem; /* 34 + 5 + 21 */
+    width: 56rem; /* (34 + 1) + 21; without screen padding */
   }
 
   .primary-brand__logo {
@@ -328,7 +328,21 @@ p {
     margin: 4rem 0 0 0; /* TODO */ /* only margin-top is not enough */
   }
 
+  .primary-content {
+    margin-right: 1rem;
+  }
+
   .primary-content-side-bar {
     display: flex;
+  }
+}
+
+@media (min-width: 1116px) { /* ((34 + 6) + (21 + 1)) x 18 = 1116; with screen padding */
+  .primary-header {
+    width: 60rem; /* (34 + 5) + 21; without screen padding */
+  }
+
+  .primary-content {
+    margin-right: 5rem;
   }
 }
