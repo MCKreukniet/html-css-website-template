@@ -133,11 +133,9 @@ p {
 }
 
 .primary-menu {
-  margin-top: 4rem; /* TODO */
+  
   height: 3rem;
   align-self: stretch;
-
-  display: none;
 }
 
 /* .primary-menu__hamburger {
@@ -145,10 +143,10 @@ p {
 } */
 
 .primary-menu__items {
-  display: flex;
+  display: none;
 
   height: 100%;
-  margin: 0;
+  margin: 4rem 0 0 0; /* TODO */ /* only margin-top is not enough */
   padding: 0;
 
   letter-spacing: .2rem;
@@ -300,8 +298,8 @@ p {
     display: block;
   }
 
-  .primary-menu {
-    display: block;
+  .primary-menu__items {
+    display: flex;
   }
 
   .post-visual {
