@@ -108,20 +108,20 @@ p {
 }
 
 .primary-brand__logo {
-  height: 1.618rem;
+  height: 1rem;
 }
 
 .primary-brand-titles {
   display: flex;
   flex-direction: column;
-  margin-left: 1rem;
+  margin: 0 1rem 0 1rem;
 }
 
 .primary-brand-titles__title {
   color: var(--light-primary-text);
 
-  font-size: 1.618rem;
-  line-height: 1.618rem;
+  font-size: 1rem;
+  line-height: 1rem;
 }
 
 .primary-brand-titles__subtitle {
@@ -133,14 +133,14 @@ p {
 }
 
 .primary-menu {
-  
   height: 3rem;
   align-self: stretch;
 }
 
-/* .primary-menu__hamburger {
-  height: 1.618rem;
-} */
+.primary-menu__hamburger {
+  margin-top: 1rem; /* TODO */
+  height: 1rem;
+}
 
 .primary-menu__items {
   display: none;
@@ -296,6 +296,10 @@ p {
 
   .primary-brand-titles__subtitle {
     display: block;
+  }
+
+  .primary-menu__hamburger {
+    display: none;
   }
 
   .primary-menu__items {
