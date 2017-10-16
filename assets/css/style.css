@@ -109,12 +109,12 @@ p {
 
 .primary-brand__logo {
   height: 1.618rem;
-  margin-right: 1rem;
 }
 
 .primary-brand-titles {
   display: flex;
   flex-direction: column;
+  margin-left: 1rem;
 }
 
 .primary-brand-titles__title {
@@ -139,6 +139,10 @@ p {
 
   display: none;
 }
+
+/* .primary-menu__hamburger {
+  height: 1.618rem;
+} */
 
 .primary-menu__items {
   display: flex;
@@ -270,6 +274,9 @@ p {
 #sound-cloud-playlist > div {
   width: 300px;
 }
+
+/* TODO: hamburger in smallest screen */
+/* (34 + 2) x 18 = 648 */
 
 @media (min-width: 768px) {
   p {
