@@ -290,7 +290,7 @@ p {
   }
 
   .content-header {
-    padding-top: 5rem;
+    padding-top: 3rem;
   }
 
   .post-visual {
@@ -330,6 +330,10 @@ p {
 
   .primary-content {
     margin-right: 1rem;
+  }
+
+  .content-header {
+    padding-top: 5rem;
   }
 
   .primary-content-side-bar {
