@@ -12,13 +12,14 @@
   /* start */
   /* https://material.io/ - Using the material design color palette */
   --primary-color: #3F51B5; /* Indigo 500 */
-  --primary-color-darkened-plus2: #303F9F; /* Indigo 700 */
-  --primary-color-darkened-plus3: #283593; /* Indigo 800 */
+  --primary-color-darkened2: #303F9F; /* Indigo 700 */
+  --primary-color-darkened3: #283593; /* Indigo 800 */
 
   --secondary-color: #E91E63; /* Pink 500 */
 
   --secondary-color-accent: #FF4081; /* Pink A200 */
-  --secondary-color-accent-minus1: #FF80AB; /* Pink A100 */
+  --secondary-color-accent-lightened: #FF80AB; /* Pink A100 */
+  --secondary-color-accent-darkened2: #C51162; /* Pink A700 */
   /* end */
 
   /* start */
@@ -73,6 +74,11 @@ p {
   max-width: var(--smallest-content-width);
 }
 
+a, a:visited, a:hover {
+  color: var(--secondary-color-accent-darkened2);
+  text-decoration: none;
+}
+
 .screen-x-padding {
   padding: 0 1rem 0 1rem;
 }
@@ -88,7 +94,7 @@ p {
 .primary-header-wrapper {
   position: relative;
 
-  background-color: var(--primary-color-darkened-plus2);
+  background-color: var(--primary-color-darkened2);
   box-shadow: 0 var(--sp2) var(--sp4) 0 rgba(0, 0, 0, 0.4); /* TODO */
 }
 
@@ -181,7 +187,7 @@ p {
 
 .primary-menu__items > li:not(.primary-menu__items__item--active) > a:hover {
   padding-top: var(--sp2);
-  border-bottom: solid var(--secondary-color-accent-minus1) var(--sp2);
+  border-bottom: solid var(--secondary-color-accent-lightened) var(--sp2);
 }
 
 .primary-content-container {
@@ -237,7 +243,7 @@ p {
 
   color: var(--light-primary-text);
 
-  background-color: var(--primary-color-darkened-plus3);
+  background-color: var(--primary-color-darkened3);
   box-shadow: 0px 0px var(--sp2) 0px rgba(0,0,0,0.4); /* TODO: inside */
 
   font-family: Verdana, Geneva, sans-serif; /* CSS Web Safe Font */
