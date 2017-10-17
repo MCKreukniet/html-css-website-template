@@ -111,20 +111,20 @@ p {
   height: 1rem;
 }
 
-.primary-brand-titles {
+.primary-brand-text {
   display: flex;
   flex-direction: column;
   margin: 0 1rem 0 1rem;
 }
 
-.primary-brand-titles__title {
+.primary-brand-text__title {
   color: var(--light-primary-text);
 
   font-size: 1rem;
   line-height: 1rem;
 }
 
-.primary-brand-titles__subtitle {
+.primary-brand-text__tagline {
   display: none;
 
   color: var(--light-primary-text);
@@ -315,12 +315,12 @@ p {
     height: 5rem;
   }
 
-  .primary-brand-titles__title {
+  .primary-brand-text__title {
     font-size: 2rem;
     line-height: 2rem;
   }
 
-  .primary-brand-titles__subtitle {
+  .primary-brand-text__tagline {
     display: block;
   }
 
