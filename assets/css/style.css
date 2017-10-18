@@ -124,6 +124,7 @@ a, a:visited, a:hover {
 }
 
 .primary-brand-text__title {
+  margin: 0;
   color: var(--light-primary-text);
 
   font-size: 1rem;
@@ -134,6 +135,7 @@ a, a:visited, a:hover {
   display: none;
 
   color: var(--light-primary-text);
+  margin: 0;
   padding-top: 0.309rem; /* line-heigth (1.618 - 1) / 2 */
   line-height: 1rem;
 }
