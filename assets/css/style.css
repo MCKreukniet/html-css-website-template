@@ -226,7 +226,7 @@ a, a:visited, a:hover {
   height: 21rem;
 }
 
-.primary-content-side-bar {
+.primary-content-extra {
   display: none;
   flex-direction: column;
   align-items: flex-end;
@@ -234,7 +234,7 @@ a, a:visited, a:hover {
   padding: 1rem 0 1rem 1rem;
 }
 
-.primary-content-side-bar > div + div {
+.primary-content-extra > div + div {
   margin-top: 1rem;
 }
 
@@ -342,7 +342,7 @@ a, a:visited, a:hover {
     padding-top: 5rem;
   }
 
-  .primary-content-side-bar {
+  .primary-content-extra {
     display: flex;
   }
 }
