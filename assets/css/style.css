@@ -20,6 +20,8 @@
   --secondary-color-accent: #FF4081; /* Pink A200 */
   --secondary-color-accent-lightened: #FF80AB; /* Pink A100 */
   --secondary-color-accent-darkened2: #C51162; /* Pink A700 */
+
+  --grey: #9E9E9E; /* Grey 500 */
   /* end */
 
   /* start */
@@ -229,9 +231,27 @@ a, a:visited, a:hover {
 .primary-content-aside {
   display: none;
   flex-direction: column;
-  align-items: flex-end;
   width: 21rem;
-  padding: 1rem 0 1rem 1rem;
+  padding: 1rem 0 1rem 0;
+  font-size: 16px;
+}
+
+.aside-title {
+  font-size: 1.618em;
+}
+
+.aside-list {
+  list-style: none;
+  line-height: 1em;
+  padding: 0;
+}
+
+.aside-list > li {
+  padding: 1em;
+}
+
+.aside-list > li + li {
+  border-top: 1px solid var(--grey); /* TODO: 1px */
 }
 
 .primary-content-aside > div + div {
