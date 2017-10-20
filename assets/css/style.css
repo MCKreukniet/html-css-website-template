@@ -236,12 +236,36 @@ a, a:visited, a:hover {
   display: none;
   flex-direction: column;
   width: 21rem;
-  padding: 1rem 0 1rem 0;
+  padding: 2em 0 3em 0;
   font-size: var(--font-size-smaller);
 }
 
-.primary-content-aside > div + div {
-  margin-top: 1rem;
+.aside-container {
+  padding-top: 1em;
+}
+
+.aside-container + .aside-container {
+  margin-top: 2em;
+}
+
+.aside-container__title {
+  margin: 0;
+  font-size: 1.618em;
+  line-height: 1em;
+}
+
+.aside-container__list {
+  list-style: none;
+  line-height: 1em;
+  padding: 0;
+}
+
+.aside-container__list > li {
+  padding: 1em;
+}
+
+.aside-container__list > li + li {
+  border-top: var(--border-thinnest);
 }
 
 .search-value {
@@ -249,24 +273,6 @@ a, a:visited, a:hover {
   width: 100%;
   font-size: var(--font-size-smaller);
   border: var(--border-thinnest);
-}
-
-.aside-title {
-  font-size: 1.618em;
-}
-
-.aside-list {
-  list-style: none;
-  line-height: 1em;
-  padding: 0;
-}
-
-.aside-list > li {
-  padding: 1em;
-}
-
-.aside-list > li + li {
-  border-top: var(--border-thinnest);
 }
 
 .primary-footer {
