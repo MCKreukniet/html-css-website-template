@@ -9,7 +9,7 @@
   --smallest-content-width: 13rem;
   --default-content-width: 34rem;
 
-  --font-size-smaller: 88.8888888889%; /* (16 x 100) / 18 */
+  --font-size-smaller: 0.888888888889rem; /* (16 x 100) / 18 */
 
   /* start */
   /* https://material.io/ - Using the material design color palette */
@@ -235,6 +235,12 @@ a, a:visited, a:hover {
   flex-direction: column;
   width: 21rem;
   padding: 1rem 0 1rem 0;
+  font-size: var(--font-size-smaller);
+}
+
+.search-value {
+  padding: 1em 1em 1em 3em;
+  width: 100%;
   font-size: var(--font-size-smaller);
 }
 
