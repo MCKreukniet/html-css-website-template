@@ -11,6 +11,8 @@
 
   --font-size-smaller: 0.888888888889rem; /* (16 x 100) / 18 */
 
+  --border-thinnest: 1px solid var(--grey); /* TODO: 1px */
+
   /* start */
   /* https://material.io/ - Using the material design color palette */
   --primary-color: #3F51B5; /* Indigo 500 */
@@ -242,6 +244,7 @@ a, a:visited, a:hover {
   padding: 1em 1em 1em 3em;
   width: 100%;
   font-size: var(--font-size-smaller);
+  border: var(--border-thinnest);
 }
 
 .aside-title {
@@ -259,7 +262,7 @@ a, a:visited, a:hover {
 }
 
 .aside-list > li + li {
-  border-top: 1px solid var(--grey); /* TODO: 1px */
+  border-top: var(--border-thinnest);
 }
 
 .primary-content-aside > div + div {
