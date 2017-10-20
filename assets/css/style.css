@@ -240,6 +240,10 @@ a, a:visited, a:hover {
   font-size: var(--font-size-smaller);
 }
 
+.primary-content-aside > div + div {
+  margin-top: 1rem;
+}
+
 .search-value {
   padding: 1em 1em 1em 3em;
   width: 100%;
@@ -263,10 +267,6 @@ a, a:visited, a:hover {
 
 .aside-list > li + li {
   border-top: var(--border-thinnest);
-}
-
-.primary-content-aside > div + div {
-  margin-top: 1rem;
 }
 
 .primary-footer {
