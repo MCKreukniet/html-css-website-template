@@ -275,6 +275,10 @@ a, a:visited, a:hover {
   border: var(--border-thinnest);
 }
 
+.hidden-button {
+  display: none;
+}
+
 .primary-footer {
   flex-direction: column;
 
