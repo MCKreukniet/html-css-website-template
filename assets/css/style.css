@@ -251,11 +251,12 @@ a, a:visited, a:hover {
   border-top: var(--border-thinnest);
 }
 
-.search-value {
+.search-field {
   padding: 1em 1em 1em 3em;
   width: 100%;
   font-size: var(--font-size-smaller);
   border: var(--border-thinnest);
+  color: var(--dark-primary-text);
 }
 
 .hidden-button {
