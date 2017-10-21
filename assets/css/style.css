@@ -113,7 +113,7 @@ a, a:visited, a:hover {
 .primary-brand {
   display: flex;
   align-items: center;
-  margin: 1em 0 1em 0;
+  margin: 1em 1em 1em 0;
 }
 
 .primary-brand__logo {
@@ -122,23 +122,18 @@ a, a:visited, a:hover {
   display: none;
 }
 
-.primary-brand-text {
-  display: flex;
-  align-items: center;
-  margin-right: 1em;
-  color: var(--light-primary-text);
-}
-
-.primary-brand-text__title {
+.primary-brand__title {
   margin: 0;
   font-size: 1.618em;
   line-height: 1em;
+  color: var(--light-primary-text);
 }
 
-.primary-brand-text__tagline {
+.primary-brand__tagline {
   display: none;
   margin: 0 0 0 1em;
-  line-height: 1rem;
+  line-height: 1em;
+  color: var(--light-primary-text);
 }
 
 .primary-menu {
@@ -339,7 +334,7 @@ a, a:visited, a:hover {
     width: 56rem; /* (34 + 1) + 21; without screen padding */
   }
 
-  .primary-brand__logo, .primary-brand-text__tagline {
+  .primary-brand__logo, .primary-brand__tagline {
     display: block;
   }
 
