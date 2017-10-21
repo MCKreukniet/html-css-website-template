@@ -183,7 +183,7 @@ a, a:visited, a:hover {
 
 .primary-content-container {
   min-height: 34rem;
-
+  flex-wrap: wrap;
   background-color: #fff;
 }
 
@@ -216,9 +216,9 @@ a, a:visited, a:hover {
 }
 
 .primary-content-aside {
-  display: none;
+  display: flex;
   flex-direction: column;
-  width: 21rem;
+  width: 13rem;
   padding: 2em 0 3em 0;
   font-size: var(--font-size-smaller);
 }
@@ -321,6 +321,10 @@ a, a:visited, a:hover {
     width: var(--default-content-width);
   }
 
+  .primary-content-aside {
+    width: 21rem;
+  }
+
   .social-container {
     flex-direction: row;
   }
@@ -345,10 +349,6 @@ a, a:visited, a:hover {
 
   .content-header {
     padding-top: 5rem;
-  }
-
-  .primary-content-aside {
-    display: flex;
   }
 }
 
