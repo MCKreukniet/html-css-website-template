@@ -189,9 +189,6 @@ a, a:visited, a:hover {
   flex-direction: column;
   flex-wrap: wrap;
   background-color: #fff;
-}
-
-.primary-content {
   padding-bottom: 1rem;
 }
 
