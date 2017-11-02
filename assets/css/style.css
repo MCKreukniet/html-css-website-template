@@ -84,6 +84,8 @@ a, a:visited, a:hover {
 
 input, textarea {
   border-radius: var(--sp2);
+  border: var(--border-thinnest);
+  color: inherit;
 }
 
 input:focus, textarea:focus {
@@ -259,8 +261,6 @@ input:focus, textarea:focus {
   padding: 1em 1em 1em 3em;
   width: 100%;
   font-size: var(--font-size-smaller);
-  border: var(--border-thinnest);
-  color: var(--dark-primary-text);
 }
 
 .hidden-button {
