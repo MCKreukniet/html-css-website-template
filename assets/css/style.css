@@ -224,16 +224,12 @@ input:focus, textarea:focus {
   display: flex;
   flex-direction: column;
   width: 13rem;
-  padding-top: 2em;
+  padding-top: 3em;
   font-size: var(--font-size-smaller);
 }
 
-.aside-container {
-  padding-top: 1em;
-}
-
 .aside-container + .aside-container {
-  margin-top: 2em;
+  margin-top: 3em;
 }
 
 .aside-container__title {
